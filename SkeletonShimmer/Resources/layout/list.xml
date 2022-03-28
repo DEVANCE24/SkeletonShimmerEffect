@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   
+   <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp"
+        android:visibility="visible"
+        android:id="@+id/shimmerLayout"
+        app:shimmer_animation_duration="1000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                
+                android:id="@+id/shimmerView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/circle"/>
+            <View
+                
+                android:id="@+id/shimmerView2"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/shimmerView1"
+                android:layout_alignTop="@+id/shimmerView1"
+                android:background="@color/grey"/>
+
+            <View
+                
+                android:id="@+id/shimmerView3"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/shimmerView1"
+                android:layout_alignBottom="@+id/shimmerView1"
+                android:background="@color/grey"/>
+
+        
+    </RelativeLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp">
+
+          <ImageView
+                
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+        
+        <TextView
+                
+            android:id="@+id/firendnameText"
+            android:layout_width="130dp"
+            android:layout_height="19dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_alignTop="@id/imageView"/>
+
+        <TextView
+                
+            android:id="@+id/frienddescriptionText"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_alignBottom="@id/imageView"/>
+
+
+    </RelativeLayout>
+
+       
+
+    
+</RelativeLayout>
